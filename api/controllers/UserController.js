@@ -62,6 +62,7 @@ module.exports = {
 		});
 	},
 	update: function (req, res, next){
+		console.log(req.param('admin'))
 		User.update(req.param('id'), req.params.all(), function userUpdated (err){
 			if(err){
 				return 	res.redirect('/user/show/' + req.param('id'));

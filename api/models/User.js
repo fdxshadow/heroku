@@ -52,8 +52,11 @@ module.exports = {
 
 	},
 
-	beforeValidation: function (values, next){
-			console.log(values)
+	beforeValidate: function (values, next){
+			console.log(values);
+
+			console.log(values.admin[1]);
+
 			if(typeof values.admin !== 'undefined'){
 				if(values.admin == 'unchecked'){
 					values.admin = false;
@@ -63,6 +66,7 @@ module.exports = {
 			}
 			next();
 	},
+
 	beforeCreate: function (values, next){
 			if(!values.password || values.password != values.confirmacion){
 				return next({err: ["contraseña no coincide con la confirmacion"]});

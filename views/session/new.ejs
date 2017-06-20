@@ -1,5 +1,7 @@
-<form action="/session/create" method="POST" class="form-signin">
-	<h2 class="form-signin-heading">por favor sign in..</h2>
+
+<form class="form-vertical" action="/session/create" method="POST">
+<div  class="form-group">
+	<h2 align="center" class="form-signin-heading">Ingreso</h2>
 	<% if (flash && flash.err){%>
 		<ul class="alert alert-success">
 	<% Object.keys(flash.err).forEach(function(error) {%>
@@ -8,8 +10,17 @@
 		</ul>
 	<% } %>
 
-	<input type="text" class="form-control" placeholder="Direccion Email" name="email">
-	<input type="password" class="form-control" placeholder="Password" name="password">
+
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 col-lg-4">
+	<input type="text" class="form-control form-control-lg" placeholder="Direccion Email" name="email">
+	<input type="password" class="form-control " placeholder="Password" name="password">
 	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Ingresar"/>
 	<input type="hidden" name="_csrf" value="<%= _csrf%>"/>
+	</div>
+	<div class="col-md-4"></div>
+	</div>
+</div>
 </form>
