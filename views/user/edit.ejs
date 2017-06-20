@@ -4,10 +4,11 @@
 	<input value="<%= user.nombre %>" name="nombre" type="text" class="form-control"/>
 	<input value="<%= user.apellido %>" name="apellido" type="text" class="form-control"/>
 	<input value="<%= user.email %>" name="email" type="text" class="form-control"/>
-	
+
 
 	<%if (session.authenticated && session.User.admin) { %>
 		<% if (user.admin) { %>
+			<h3>HOLAAAAAAAAA</h3>
 			<input type="hidden" name="admin" value="unchecked">
 			<label class="checkbox"><input type="checkbox" name="admin" checked>Admin</label>
 		<% } else { %>
