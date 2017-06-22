@@ -13,6 +13,8 @@ module.exports = {
 		//req.session.flash = {};
 	},
 
+	
+
 	create: function (req, res, next){
 		User.create(req.params.all(), function userCreated(err, user) {
 			if(err) {

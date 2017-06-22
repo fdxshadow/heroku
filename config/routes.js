@@ -39,7 +39,14 @@ module.exports.routes = {
   '/user/new': {
         controller: 'UserController',
         action: 'new'
-  }﻿
+  }﻿,
+  '/supermercados': {
+              view: 'muestras/supermercados'
+            },
+  '/productos': {
+              view: 'muestras/productos'
+            }          
+
 
   /***************************************************************************
   *                                                                          *
