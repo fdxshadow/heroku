@@ -4,10 +4,9 @@ $(document).ready(function(){
 
 		console.log(data);	
 
-		var columnas=data.length;
-
 		for (var i = data.length - 1; i >= 0; i--) {
-		$("#super").append("<div class=col-md-12><a href='#'><img src='/images/"+data[i].nombre+".png' class='img-rounded'>"+data[i].nombre+"</a><div/>");
+			var path="/images/"+data[i].nombre+".png";
+		$("#super").append("<div class=col-md-12><a href='#'><img src='"+path+"' class='img-rounded'>"+data[i].nombre+"</a><div/>");
 		}
 	});
 
