@@ -6,12 +6,10 @@ $(document).ready(function(){
 
 		for (var i = data.length - 1; i >= 0; i--) {
 			var path="/images/"+data[i].nombre+".png";
-		$("#super").append("<div class=col-md-12><a href='#'><img id="+i+" class='img-rounded'></a><div/>");
-		$("#"+i).attr({
-			src:path
-		});
-
-
+			$("#super").append("<div class=col-md-12><a href='#'><img id="+i+" class='img-rounded'></a><div/>");
+			$("#"+i).attr({
+				src:path
+			});
 		}
 	});
 
