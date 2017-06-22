@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var columnas=data.length;
 
 		for (var i = data.length - 1; i >= 0; i--) {
-		$("#super").append("<div class=col-md-12><a href='#'><img src=''class='img-rounded'>"+data[i].nombre+"</a><div/>");
+		$("#super").append("<div class=col-md-12><a href='#'><img src='/images/'"+data[i].nombre+" class='img-rounded'>"+data[i].nombre+"</a><div/>");
 		}
 	});
 
