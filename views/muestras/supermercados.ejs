@@ -1,8 +1,13 @@
 <h3 align="center">Supermercados </h3>
+  
 
+
+  <% if(session.authenticated){ %>
 <div class="row" align="center">
   <ul id="super">
-    
+    <%}else{%>
+    	<%res.redirect('/');%>
+    <%}%>
 
 
 

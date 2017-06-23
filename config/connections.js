@@ -91,12 +91,12 @@ module.exports.connections = {
   ***************************************************************************/
   Mongo: {
     adapter: 'sails-mongo',
-    //host: 'localhost',
-    //user:'',
-    //password:'',
-    //port: 27017,
-    //database:'sails',
-    url: 'mongodb://admin:1234@ds135382.mlab.com:35382/venta-facil',
+    host: 'localhost',
+    user:'',
+    password:'',
+    port: 27017,
+    database:'sails',
+    //surl: 'mongodb://admin:1234@ds135382.mlab.com:35382/venta-facil',
     schema: true
 
   }
