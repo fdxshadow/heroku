@@ -74,7 +74,7 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-  // adapter: 'mongo',
+  //adapter: 'mongo',
   //url: 'mongodb://admin:1234@ds135382.mlab.com:35382/venta-facil', // user, password and port optional
 
   /***************************************************************************

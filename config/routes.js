@@ -35,17 +35,16 @@ module.exports.routes = {
   '/': {
     view: 'static/index'
   },
+  '/compra/supermercados': {
+        controller: 'CompraController',
+        action: 'supermercados'
+  }﻿,
 
   '/user/new': {
         controller: 'UserController',
         action: 'new'
   }﻿,
-  '/supermercados': {
-              view: 'muestras/supermercados'
-            },
-  '/productos': {
-              view: 'muestras/productos'
-            }          
+  'categorias?:name':'CompraController.categorias'   
 
 
   /***************************************************************************
