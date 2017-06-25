@@ -18,10 +18,11 @@ module.exports = {
 
 
    product: function(req, res){
-   		req.param('json');	
+   		var productos = req.param('json');	
 
-   		 //
-         res.view('compra/productos/');
+         res.view({
+         	productos:productos
+         });
    },
 	
 };
