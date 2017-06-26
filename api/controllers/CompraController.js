@@ -18,7 +18,7 @@ module.exports = {
 
 
    product: function(req, res){
-   		var productos = req.param('json');	
+   		var productos = req.body.json;	
 
          res.view({
          	productos:productos
