@@ -41,13 +41,13 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
-  // someMysqlServer: {
-  //   adapter: 'sails-mysql',
-  //   host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-  //   user: 'YOUR_MYSQL_USER', //optional
-  //   password: 'YOUR_MYSQL_PASSWORD', //optional
-  //   database: 'YOUR_MYSQL_DB' //optional
-  // },
+  //Mysql: {
+    //adapter: 'sails-mysql',
+    //host: '127.0.0.1',
+    //user: 'root', //optional
+    //password: '1234', //optional
+    //database: 'venta' //optional
+   //}
 
   /***************************************************************************
   *                                                                          *
@@ -96,8 +96,7 @@ module.exports.connections = {
     //password:'',
     //port: 27017,
     //database:'sails',
-    url: 'mongodb://venta:facil@ds135532.mlab.com:35532/ventafacil',
+    url: 'mongodb://admin2:1234@ds135382.mlab.com:35382/venta-facil',
     schema: true
-
   }
 };

@@ -44,8 +44,14 @@ module.exports.routes = {
         controller: 'UserController',
         action: 'new'
   }﻿,
+
   'categorias?:name':'CompraController.categorias',
-  'productos': 'CompraController.product'   
+  '/productos/:super/:categoria': 'CompraController.mostrarprod'
+
+  /*'/productos/:super/:categoria':{
+      controller:'CompraController',
+      action : 'mostrarprod'
+  } */  
 
 
   /***************************************************************************
