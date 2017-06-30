@@ -96,7 +96,7 @@ module.exports.connections = {
     //password:'',
     //port: 27017,
     //database:'sails',
-    url: 'mongodb://admin2:1234@ds135382.mlab.com:35382/venta-facil',
+    url: 'mongodb://admin:1234@ds135382.mlab.com:35382/venta-facil',
     schema: true
   }
 };
