@@ -1,12 +1,13 @@
-<div class="addon" id="categorias">
+<div class="addon">
           <p>Categorias</p>
           <h3>Supermercado: <%= nom%></h3>
 
           <input type="hidden" id="superM" value="<%= nom%>">
           <ul id='Categorias' >
            <li class="clearfix">
-            <a href="/productos/<%= nom%>/Carnes y pescados" target="_blank">
-              <em class="hot"></em>
+            <a href="/productos/<%= nom%>/carnes y pescados">
+            <input type="hidden"  value="Carnes y pescados">
+              <em  class="hot"></em>
               <div class="legend-info">
                 <strong>Carnes y pescados</strong>Featured hot special at the moment.
               </div>
@@ -17,7 +18,7 @@
 
 
             <li class="clearfix">
-            <a  target="_blank">
+            <a href="/productos/<%= nom%>/lacteos y huevos">
             <input type="hidden" value="lacteos y huevos">
               <em class=""></em>
               <div class="legend-info">

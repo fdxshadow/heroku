@@ -46,7 +46,9 @@ module.exports.routes = {
   }﻿,
 
   'categorias?:name':'CompraController.categorias',
-  '/productos/:super/:categoria': 'CompraController.mostrarprod'
+  '/productos/:name/:categoria': 'CompraController.mostrarprod',
+  '/productos': 'CompraController.mostrarprod',
+  'post /carroadd':'CarroController.add'
 
   /*'/productos/:super/:categoria':{
       controller:'CompraController',

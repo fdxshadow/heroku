@@ -1,0 +1,7 @@
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+}
+.stars {
+    margin:20px auto 1px;    
+}

@@ -17,17 +17,11 @@ module.exports = {
 	},
 
   mostrarprod: function(req,res){
-    var name=req.param('super');
-    var categorias=req.param('categoria');
-    var socketIOClient = require('socket.io-client');
-    var sailsIOClient = require('sails.io.js');
-    var io = sailsIOClient(socketIOClient);
-    io.sails.url = 'https://api-comunication.herokuapp.com';
-    io.socket.post('/prod',{Super:name,Categoria:categorias},function(resData){
-
-      res.view('compra/product');
-
-
+    var request = require('request');
+    request.post({url:'https://api-comunication.herokuapp.com/prod', form: {Super:req.param('name'),Categoria:req.param('categoria')}}, function(err,httpResponse,body){
+      var productos=JSON.parse(body);
+      console.log(productos);
+      res.view('compra/product',{productos:productos});
     });
   }
 };
