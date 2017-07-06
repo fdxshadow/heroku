@@ -13,8 +13,7 @@ module.exports = {
 		var precio=req.body.precio;
 		var id_usuario=req.body.idu;
 		Carro.create({id_cliente:id_usuario,id_producto:id_producto,nombre:nombre,precio:precio}).exec(function (err, finn){
-		  if (err) { return res.serverError(err); }
-		  console.log(finn);
+		  if (err) { return res.send('noOk'); }
 		  return res.send('ok');
 		});
 	},
@@ -22,9 +21,26 @@ module.exports = {
 	mostrar:function(req,res){
 		console.log(req.param('id'));
 
-		res.view();
+		Carro.find({id_cliente:req.param('id')}).populateAll().exec(function(err,car){
+			res.view('compra/carro',{car:car});
 
 
+		})
+	},
+
+	borrar:function(req,res){
+		var id_prod=req.body.id;
+
+		Carro.destroy({id:id_prod}).exec(function(err){
+			if(err){
+				return res.send('noOk');
+
+			}
+			return res.send('ok');
+
+
+
+		});
 	}
 	
 };

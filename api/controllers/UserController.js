@@ -9,7 +9,7 @@ module.exports = {
 
 	'new': function (req, res){
 		//res.locals.flash = _.clone(req.session.flash);
-		res.view();
+		res.view('user/new');
 		//req.session.flash = {};
 	},
 

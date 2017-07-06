@@ -19,6 +19,8 @@ module.exports = {
 	},
 	create: function(req, res, next){
 		var bcrypt = require('bcrypt');
+		console.log(req.param('email'));
+		console.log(req.param('password'));
 
 		if(!req.param('email') || !req.param('password')){
 			var usernamePasswordRequiredError = [{name: 'usernamePasswordRequired', message: 'you must enter both a username and password'}]
@@ -57,11 +59,14 @@ module.exports = {
 					res.redirect('/user');
 					return;
 				}
+				if(req.session.authenticated){
+
+					res.redirect('/')
+				}
 
 
 
-
-				res.redirect('/');
+				//res.redirect('/');
 				//res.redirect('/user/show/' + user.id);	
 			});
 		});
@@ -69,7 +74,7 @@ module.exports = {
 	},
 	destroy: function(req, res, next){
 		req.session.destroy();
-		res.redirect('/session/new');
+		res.redirect('/');
 	}	
 };
 

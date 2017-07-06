@@ -1,58 +1,78 @@
-<div class="addon">
+<div class="addon" id="categorias">
           <p>Categorias</p>
           <h3>Supermercado: <%= nom%></h3>
 
           <input type="hidden" id="superM" value="<%= nom%>">
-          <ul id='Categorias' >
+
+    <div class="row" align="center">
+
+      <div class="col-md-1"></div>      
+
+       <ul id='Categorias' >
+          <div class="col-sm-4 col-xs-6 col-md-2">
            <li class="clearfix">
-            <a href="/productos/<%= nom%>/carnes y pescados">
-            <input type="hidden"  value="Carnes y pescados">
-              <em  class="hot"></em>
+            <a href="/productos/<%= nom%>/Carnes y pescados">
+              <img class="img-responsive" src="http://icon-icons.com/icons2/131/PNG/256/meat_food_20586.png" width="250" height="250" >
               <div class="legend-info">
-                <strong>Carnes y pescados</strong>Featured hot special at the moment.
+                <strong>Carnes y pescados</strong>Vacuno, cerdo, salmon , etc..
               </div>
             </a>  
             </li>
+            </div>
 
-
-
-
+            <div class="col-sm-4 col-xs-6 col-md-2">
             <li class="clearfix">
             <a href="/productos/<%= nom%>/lacteos y huevos">
             <input type="hidden" value="lacteos y huevos">
-              <em class=""></em>
+              <img   class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu72ZY21NuNCdtEKrFxipm6rn3PO2-RZiB2WhvesV3_y2Qr_04Mg" width="250" height="250">
               <div class="legend-info">
-                <strong>Lacteos y huevos</strong>Featured hot special at the moment.
+                <strong>Lacteos y huevos</strong>leches, mantequilla, harina, huevos.
               </div>
+              </a>  
             </li>
+            </div>
 
+
+            <div class="col-sm-4 col-xs-6 col-md-2">
             <li class="clearfix">
              <a  target="_blank">
              <input type="hidden" value="congelados y postres">
-              <em class="extra"></em>
+             <img class="img-responsive" src="https://images-cloud.fiuxy.com/wwzM0f2.png" width="250" height="250">
               <div class="legend-info">
-                <strong>Congelados y Postres</strong>Contests, surveys, prizes and more fun stuff.
+                <strong>Congelados y Postres</strong>nose.
               </div>
+              </a>
             </li>
-        
+            </div>
+            
+            <div class="col-sm-6 col-xs-6 col-md-2">  
+
              <li class="clearfix" >
               <a  target="_blank">
               <input type="hidden" value="panaderia">
-              <em class="hot"></em>
+             <img class="img-responsive" src="/images/icons/panaderia.png" width="250" height="250">
               <div class="legend-info">
-                <strong>Panadería</strong>Featured hot special at the moment.
+                <strong>Panadería</strong>panpita, pan de completo, pan especial etc..
               </div>
+              </a>
             </li>
-             <li class="clearfix" >
+            </div>
+            
+
+            <div  class="col-sm-4 col-xs-6 col-md-2">
+
+            <li class="clearfix" >
                 <a  target="_blank">
                 <input type="hidden" value="galletas y golosinas">
-                <em class="hot"></em>
+             <img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Lollipop-512.png" width="250" height="250">
                 <div class="legend-info">
                  <strong>Galletas y Golosinas</strong>Featured hot special at the moment.
                 </div>
+                </a>
             </li>
+            </div>
 
-
-
-          </ul>
-        </div>
+       </ul>
+       <div class="col-md-1"></div>
+  </div>
+ </div> 

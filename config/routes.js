@@ -48,7 +48,10 @@ module.exports.routes = {
   'categorias?:name':'CompraController.categorias',
   '/productos/:name/:categoria': 'CompraController.mostrarprod',
   '/productos': 'CompraController.mostrarprod',
-  'post /carroadd':'CarroController.add'
+  'post /carroadd':'CarroController.add',
+  '/carro/:id':'CarroController.mostrar',
+  '/pagar/:monto':'PagoController.pagar',
+  'post /carrodel':'CarroController.borrar'
 
   /*'/productos/:super/:categoria':{
       controller:'CompraController',

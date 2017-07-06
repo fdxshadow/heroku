@@ -10,7 +10,12 @@ $(document).ready(function () {
 		console.log(id_u);
 
 		$.post('/carroadd',{idp:id_p,nombre:producto,precio:precio,idu:id_u},function(data){
-			console.log(data);
+			if(data=='ok'){
+				$.notify('Producto agregado al carro',"success");
+
+
+
+			}
 
 		});
 	});

@@ -38,13 +38,13 @@
     <!--STYLES END-->
   </head>
 
-  <body>
 <!--
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <a class="navbar-brand" href="/"><div font-family: 'Exo', sans-serif;><span style="color:#0b4036  ">Venta</span><img src="https://userscontent2.emaze.com/images/40322bd7-bf8a-4531-9776-e7b24ec05fe6/0c4dee51-403f-4a0a-bc19-961c87dfb8a1.png" width="36" height="28" alt="logo"/> Facil</div></a>
       </div>
     </div>-->
+
 
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -76,6 +76,10 @@
               <li><a href="#">Ofertas</a></li>
               <li><a href="#">Locales abiertos</a></li>
               <li><a href="#">Tutorial de Compra</a></li>
+              <li><a href="/carro/<%=session.User.id%>">Carro</a></li>
+
+
+
 
             <% } %> 
             <% if(session.authenticated && session.User.admin){ %>
@@ -91,7 +95,7 @@
             <% } %>
           </div>
           <%if (!session.authenticated) {%>
-            <form class="navbar-form navbar-right" action="/session/create">
+            <!--<form class="navbar-form navbar-right" action="/session/create">
             <div class="form-group">
               <input type="text" placeholder="Email" name="email" class="form-control">
             </div>
@@ -100,7 +104,7 @@
             </div>
             <button type="submit" class="btn btn-success">Ingresar</button>
             <input type="hidden" name="_csrf" value="<%= _csrf %>"/>
-            </form>
+            </form>-->
           <% } %>
         </div>
       </div>
@@ -117,7 +121,7 @@
 
 
 
-    <br></br>
+ 
     <%- body %>
 
     <div class="container">
@@ -129,6 +133,10 @@
       </div>
       </footer>
     </div>
+
+
+
+
 
 
 
@@ -180,6 +188,7 @@
           + Use a different preprocessor, like TypeScript
 
     -->
+    
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
@@ -189,6 +198,8 @@
     <script src="/js/bootstrap/bootstrap.min.js"></script>
     <script src="/js/carro.js"></script>
     <script src="/js/customValidate.js"></script>
+    <script src="/js/delete.js"></script>
+    <script src="/js/notify.min.js"></script>
     <script src="/js/supermercados.js"></script>
     <!--SCRIPTS END-->
   </body>

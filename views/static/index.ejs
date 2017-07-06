@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
 <br></br>
   <div ALIGN=center class="jumbotron">
   	
@@ -24,4 +24,86 @@
 
 
   	</div>
+</div>-->
+
+
+<div class="container">
+
+ 
+    
+    <% if(session.authenticated){ %>
+     <div ALIGN=center class="jumbotron">
+        <div align="center" class="row text-center">
+            <div class="col-lg-12">
+                <h2 class="page-header">Seleccione el icono acorde a sus consulta</h2>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <a href="compra/supermercados">
+                    <img class="img-responsive img-portfolio img-hover" src="images/icons/logo.png" alt="Comprar">
+                  
+</a><h1><small>Compra</small></h1>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive img-portfolio img-hover" src="images/icons/disponibilidad.png" alt="Disponibilidad">
+                  
+</a><h1><small>Tiendas Abiertas</small></h1>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive img-portfolio img-hover" src="images/icons/oferta.png" alt="Oferta">
+                  
+</a><h1><small>Ofertas</small></h1>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6" align=center>
+                <a  href="#">
+                    <img class="img-responsive img-portfolio img-hover" src="images/icons/help.png" alt="AYUDA" >
+                
+</a><h1><small>Ayuda</small></h1>
+            </div>
+            
+        </div>
+
+
+
+
+
+  </div>
+        
+    <% } else{ %>
+
+    </div>
+<div class="container bg-overlay">
+  <div class="row text-center">
+    <h1>Venta Facil<br> Siempre con usted.</h1>
+        <h4>Compras en linea para tus familiares,<br>
+        cargue dinero a sus cuentas vinculadas.</h4>
+        <br><br>
+        <a href="session/new" >
+                    <img  class="img-responsive img-portfolio img-hover center-block" src="https://www.muninegrete.cl/wp-content/uploads/2017/05/icono.png"  >
+    </a>
+  </div>
 </div>
+    
+
+
+    
+
+    
+
+
+
+
+
+
+
+    <% } %>
+  
+
+
+
+</div>
+

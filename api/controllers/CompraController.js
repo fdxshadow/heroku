@@ -24,5 +24,8 @@ module.exports = {
       res.view('compra/product',{productos:productos});
     });
   }
+
+
+  
 };
 
